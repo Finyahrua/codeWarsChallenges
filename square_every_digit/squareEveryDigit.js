@@ -1,12 +1,11 @@
-function squareDigits(num) {
-    let numString = num.toString();
-    let newNum = "";
-    for (let i = 0; i < numString.length; i++) {
-        newNum += Math.pow(numString[i], 2);
-
+function squareDigitsTS(num) {
+    var numString = num.toString();
+    var newNum = "";
+    for (var i = 0; i < numString.length; i++) {
+        newNum += Math.pow(parseInt(numString[i]), 2).toString();
     }
-  return parseInt(newNum);
+    return parseInt(newNum);
 }
-
-console.log(squareDigits(9119));
-console.log(squareDigits(12345));
+console.log(squareDigitsTS(9119));
+console.log(squareDigitsTS(12345));
+// some random comment
